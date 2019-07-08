@@ -1,38 +1,93 @@
 <!doctype html>
-
-<nav role='navigation'>
-  <ul class="nav">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="About.html">About</a></li>
-    <li><a href="#page-clients">Clients</a></li>
-    <li><a href="https://www.facebook.com/daniel.almirante">Contact Me</a></li>
-  </ul>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color:  #006600;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: blue;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #006600;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="https://www.facebook.com/daniel.almirante" class="logo">Daniel John Almirante</a>
+  <div class="header-right">
+    <a class="active" href="index.html">Home</a>
+    <a href="https://www.facebook.com/daniel.almirante">Contact</a>
+    <a href="About.html">About me</a>
+  </div>
+</div>
+
+
+
+
 	<title>HCI Project Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- this is a comment in HTML -->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+	
 </head>
 
 <body style="background-color:lightblue;">
 	<div>
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
-		<div>
-			<h1>Daniel John Almirante</h1>
-			<p>Game Development &middot; God of WOW &middot; Orc Rogue</p>
-		</div>
+		<
 
 
 		<h4>My Favorite Game</h4>
-		<h4 style="background-color:orange;">Half Life 1</h4>
+		<h4>Half Life 1</h4>
 		<h4>This game never gets old for me. A game that began it all.I still remember playing with my dad the game for the first time.  </h4>
 		<a href="https://www.youtube.com/watch?v=JoV9o6b91Sc"> Check out the game for yourself!</a>
 		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
@@ -40,17 +95,17 @@
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
 		<div id="project1">
 			<a href="project.html">
-				<img src="images/Halflife1.jpg" alt="Lorem Pixel image">
+				<img src="images/Halflife1.jpg" alt="Lorem Pixel image" style="width:200px;height:200px;">
 				<p style="font-family:arial;color:pink;font-size:32px">World Of Warcraft</p>
 			</a>
 		</div>
 		<div id="project2">
 			<a href="project.html">
 			    <p>My reaction to the game when it released</p>
-                <img src="images/Wow.gif"  alt="Lorem Pixel image"> 				
+                <img src="images/Wow.gif"  alt="Lorem Pixel image"style="width:200px;height:200px;"> 				
 				<p>Burning crusade expansion!! My favorite part of the game</p>
 				<p>A game that I still play to this day for fun, I remember spending hundred of hours into the game like crazy.</p>
-				  <img src="images/wow.jpg";background-size:50% 100%" alt="Lorem Pixel image"> 				
+				  <img src="images/wow.jpg";background-size:50% 100%" alt="Lorem Pixel image"style="width:200px;height:200px;"> 				
 				  
 			</a>
 		</div>
@@ -60,14 +115,14 @@
 			    <p>I like playing from time to time, I consider myself pro. hehe</p>
 				<p> Back in my highschool days I play as an attacking midfielder and used to always destroy the defence,</p>
 				<p> because me being small. I used to get into fights a lot with my opponents. I enjoyed it. </p> 
-				<img src="images/ronaldo.gif" alt="Lorem Pixel image">
+				<img src="images/ronaldo.gif" alt="Lorem Pixel image"style="width:200px;height:200px;">
 				</a>
 				
 		</div>
 		<div id="project3">
 			<a href="project.html">
 			    <p style="font-family:arial;color:White;text-align:center;font-size:32px">GAMER GANG</p>			
-				<img src="images/friends.jpg" alt="Lorem Pixel image">
+				<img src="images/friends.jpg" alt="Lorem Pixel image"style="width:200px;height:200px;">
 				</a>
 				
 		

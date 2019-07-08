@@ -1,14 +1,81 @@
 <!doctype html>
-
-<nav role='navigation'>
-  <ul class="nav">
-    <li><a href="file:///D:/lab1/static/index.html">Home</a></li>
-    <li><a href="file:///D:/lab1/static/About.html">About me</a></li>
-    <li><a href="#page-clients">My games</a></li>
-    <li><a href="https://www.facebook.com/daniel.almirante">Contact Us</a></li>
-  </ul>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color:  #006600
+;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: blue;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color:  #006600;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="#default" class="logo">Daniel John Almirante</a>
+  <div class="header-right">
+    <a class="active" href="index.html">Home</a>
+    <a href="https://www.facebook.com/daniel.almirante">Contact</a>
+    <a href="About.html">About me</a>
+  </div>
+</div>
+
+
+</head>
+
+<body style="background-color:lightblue;">
+	
 	<title>HCI Project Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,5 +97,6 @@
 			<p>Game Development &middot; God of WOW &middot; Orc Rogue</p>
 		</div>
 		<img src="images/DANIEL.jpg" alt="me" style="width:200px;height:200px;">
+		<p> I am 21 years old, Studying in Asia Pacific College. I am now in 2rd year of my course. </p>
 		
 
